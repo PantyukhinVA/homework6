@@ -1,12 +1,11 @@
-package Task4;
+package task4;
 
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 public class Main {
     public static void main(String[] args) {
-        Set<String> set = new HashSet<>(List.of(new String[]{"foo", "buzz", "bar", "fork", "bort", "spoon", "!", "dude"}));
+        Set<String> set = new HashSet<>(Set.of("foo", "buzz", "bar", "fork", "bort", "spoon", "!", "dude"));
         set = removeEvenLength(set);
 
         System.out.println(set);
